@@ -1,0 +1,78 @@
+/**
+686868 '普通颜色:普通用户用色
+089808 '会员颜色:登录后用户用色
+0828a8 'VIP颜色:VIP用户用色
+880888 '黄金颜色:黄金VIP用户用色
+282828 '管理颜色:管理员发言用色
+D80808 '系统颜色:系统信息用色
+038a0a '深度颜色:深度颜色用色
+e0f1e1 '边框颜色:边框颜色用色
+f6fdf6 '浅色颜色:浅色颜色用色
+FFFFFE '白色颜色:白色颜色用色
+**/
+body{font-family:"微软雅黑",Verdana, Geneva, sans-serif;font-size:12px;}
+body,textarea,frame,iframe,html,div{scrollbar-face-color:#989898;scrollbar-shadow-color:#FFFFFE;scrollbar-highlight-color:#FFFFFE;scrollbar-3dlight-color:#989898;scrollbar-darkshadow-color:#989898;scrollbar-track-color:#FFFFFE;scrollbar-arrow-color:#989898;}
+body,ul,ol,li,img{padding:0px;margin:0px;border:0px;list-style:none;}
+a,a:link,a:active{color:#585858;text-decoration:underline;}
+a:hover{color:#DD0000;text-decoration:none;}
+a:visited{color:#585858;text-decoration:none;}
+
+.pls{border-top:#ECF6FE 1px solid;border-left:#ECF6FE 1px solid;border-right:#ECF6FE 1px solid;word-break:break-all;word-wrap:break-word;}
+.p0{color:#686868;}
+.p1{color:#089808;}
+.p2{color:#0828a8;}
+.p3{color:#880888;}
+.p4{color:#DD0000;}
+.p5,.p6{color:#D80808;}
+.pls a{margin:0px 2px;}
+.pls p{display:block;margin:0px;padding:0px;text-align:right;}
+.pls p b{float:left;}
+.pls div{padding:1px 5px;margin:1px 5px;}
+.pls p.g{text-align:right;display:none;}
+.pls p.gg{text-align:right;display:none;}
+.pls p.gk{text-align:right;display:block;}
+.pls div{border:#ECF6FE 1px solid;}
+.pls ol,.pls li{padding:5px 12px;border-bottom:#ECF6FE 1px solid;background-color:#FFFFFE;}
+.pls .m{background-color:#FAFDFF;}
+.pls .n{background-color:#FFFFFE;}
+.plk{width:100%;font-size:12px;}
+.plk td{text-align:center;}
+.plk form{margin:0px;padding:0px;border:0px;}
+.plki{width:100%;margin:0px;padding:0px;height:20px;line-height:20px;border:#038a0a 1px solid;background-color:#f6fdf6;color:#223340;}
+.plki1{width:100%;margin:0px;padding:0px;height:20px;line-height:20px;border:#038a0a 1px solid;background-color:#FFFFFE;color:#038a0a;font-weight:bold;}
+.plks{width:32px;margin:0px;padding:0px;height:20px;line-height:20px;border:#038a0a 1px solid;background-color:#038a0a;color:#FFFFFE;}
+
+.pg{}
+.yb{text-align:center;background-color:#038a0a;color:#FFFFFE;}
+.yst{height:18px;line-height:18px;border:#038a0a 1px solid;background-color:#038a0a;color:#FFFFFE;}
+
+.cb{text-align:center;background-color:#038a0a;color:#FFFFFE;}
+.cm{width:100%;margin:0px auto;border:#038a0a 1px solid;font-size:12px;}
+a.cma,a.cma:link,a.cma:active,a.cma:visited{color:#FFFFFE;margin:0px 2px;}
+a.cma:hover{text-decoration:underline;}
+.ct{height:18px;line-height:18px;font-weight:bold;}
+.cc{text-align:center;}
+.cct{width:99%;height:288px;}
+.ccs{height:18px;line-height:18px;}
+.ccst{height:18px;line-height:18px;border:#038a0a 1px solid;background-color:#038a0a;color:#FFFFFE;}
+
+#hh{top:0px;right:0px;position:fixed;font-size:12px;z-index:800;width:auto;opacity:0.9;filter:alpha(opacity=90);-moz-opacity:0.9;-khtml-opacity:0.9;}
+.hht{width:88px;text-align:center;background-color:#038a0a;color:#f6fdf6;}
+.hhm{width:86px;text-align:center;border:#038a0a 1px solid;background-color:#e0f1e1;color:#038a0a;}
+.hhc{width:86px;height:88px;overflow:auto;border-left:#038a0a 1px solid;border-right:#038a0a 1px solid;background-color:#f6fdf6;color:#038a0a;}
+.hhc li{padding:0px 5px;border-bottom:#e0f1e1 1px solid;}
+.hhc li i{display:none;}
+.hhc li:hover i{text-align:right;font-style:normal;display:block;}
+
+#hk,#hko{bottom:0px;left:0px;position:fixed;font-size:12px;z-index:800;}
+#hk{width:auto;opacity:0.6;filter:alpha(opacity=60);-moz-opacity:0.6;-khtml-opacity:0.6;}
+#hko{text-align:left;opacity:0.2;filter:alpha(opacity=20);-moz-opacity:0.2;-khtml-opacity:0.2;}
+#hkc{background-color:#e0f1e1;border-bottom:0px;border-top:#038a0a 1px solid;border-left:#038a0a 1px solid;border-right:#038a0a 1px solid;padding:2px 0px;color:#038a0a;}
+#hkb{text-align:right;}
+#hkb a,#hko a{padding:0px 4px ;text-decoration:none;background-color:#038a0a;color:#f6fdf6;}
+.hl{width:89px;height:26px;line-height:26px;float:left;text-align:center;}
+.cr{clear:both;}
+.hkt{width:80px;height:18px;margin:0px;padding:0px;border:0px;background-color:#FFFFFE;color:#038a0a;}
+.hki{width:47px;height:18px;margin:0px;padding:0px;text-align:center;border:0px;background-color:#FFFFFE;color:#038a0a;}
+.hks{width:32px;height:18px;margin:0px;padding:0px;border:0px;background-color:#038a0a;color:#f6fdf6;}
+.hkh{width:80px;height:18px;margin:0px;padding:0px;border:0px;background-color:#038a0a;color:#f6fdf6;}

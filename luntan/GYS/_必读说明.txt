@@ -1,0 +1,10 @@
+这个文件夹内的所有txt文件均为储存聊天数据的；
+文件夹的名称可以依照config.asp文件中聊天标示eckk的值随意拟定；
+文件夹中必须包含以下几个txt文件：
+
+EESaiChat（当前聊天室的聊天内容）、
+EESaiChato（已经发布的聊天数量）、
+EESaiChatu（当前在线的聊天人员）、
+EESaiChatx（被禁言的聊天人员）、
+EESaiChatm（收藏聊天内容）。
+文件夹中其他EESaiChat_六位编码的文件为手工储存的聊天室内容；

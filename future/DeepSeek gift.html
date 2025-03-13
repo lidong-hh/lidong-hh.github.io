@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+background: #1a1a1a;
+margin: 0;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+overflow: hidden;
+}
+
+/* 标题样式 */
+.title {
+color: #FFD700;
+font-family: '华文行楷', cursive;
+font-size: 4em;
+text-shadow: 0 0 10px rgba(255,215,0,0.5);
+margin: 20px 0;
+position: relative;
+z-index: 1;
+}
+
+/* 礼物盒容器 */
+.gift-container {
+position: relative;
+margin-top: 10vh;
+perspective: 1000px;
+}
+
+/* 礼物盒主体 */
+.gift-box {
+width: 200px;
+height: 200px;
+position: relative;
+transform-style: preserve-3d;
+animation: rotate 8s linear infinite;
+}
+
+/* 盒身 */
+.box-body {
+position: absolute;
+width: 100%;
+height: 100%;
+background: #2ecc71;
+transform: translateZ(50px);
+box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* 盒盖 */
+.box-lid {
+position: absolute;
+width: 100%;
+height: 40px;
+background: #e74c3c;
+transform: translateZ(80px) rotateX(15deg);
+box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* 丝带装饰 */
+.ribbon {
+position: absolute;
+background: #FFD700;
+}
+.ribbon::before,
+.ribbon::after {
+content: '';
+position: absolute;
+background: inherit;
+}
+
+/* 横向丝带 */
+.horizontal {
+width: 100%;
+height: 20px;
+top: 50%;
+transform: translateY(-50%);
+}
+.horizontal::before {
+width: 20px;
+height: 100%;
+left: -10px;
+}
+.horizontal::after {
+width: 20px;
+height: 100%;
+right: -10px;
+}
+
+/* 纵向丝带 */
+.vertical {
+height: 100%;
+width: 20px;
+left: 50%;
+transform: translateX(-50%);
+}
+.vertical::before {
+width: 100%;
+height: 20px;
+top: -10px;
+}
+.vertical::after {
+width: 100%;
+height: 20px;
+bottom: -10px;
+}
+
+/* 旋转动画 */
+@keyframes rotate {
+0% {
+transform: rotateY(0deg);
+}
+100% {
+transform: rotateY(360deg);
+}
+}
+
+/* 背景星光 */
+.star {
+position: absolute;
+background: white;
+border-radius: 50%;
+animation: twinkle 1.5s infinite;
+}
+
+@keyframes twinkle {
+0%, 100% { opacity: 0.3; }
+50% { opacity: 1; }
+}
+</style>
+</head>
+<body>
+<h1 class="title">由DeepSeek呈现</h1>
+
+<div class="gift-container">
+<div class="gift-box">
+<div class="box-body"></div>
+<div class="box-lid"></div>
+<div class="ribbon horizontal"></div>
+<div class="ribbon vertical"></div>
+</div>
+</div>
+
+<!-- 添加随机星光 -->
+<script>
+function createStars() {
+const container = document.body;
+for (let i = 0; i < 50; i++) {
+const star = document.createElement('div');
+star.className = 'star';
+star.style.width = Math.random() * 3 + 'px';
+star.style.height = star.style.width;
+star.style.left = Math.random() * 100 + 'vw';
+star.style.top = Math.random() * 100 + 'vh';
+star.style.animationDelay = Math.random() * 2 + 's';
+container.appendChild(star);
+}
+}
+createStars();
+</script>
+</body>
+</html>

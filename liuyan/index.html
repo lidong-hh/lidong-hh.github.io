@@ -1,0 +1,29 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>简易留言板</title>
+<style>
+body { max-width: 800px; margin: 20px auto; padding: 20px; }
+.container { border: 1px solid #ccc; padding: 20px; }
+form { display: grid; gap: 10px; }
+input, textarea { padding: 8px; border: 1px solid #ddd; }
+button { background: #4CAF50; color: white; padding: 10px; border: none; }
+button:hover { background: #45a049; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>留言板</h1>
+<form action="/submit" method="POST">
+<input type="text" name="name" placeholder="你的名字（可选）">
+<textarea name="message" rows="4" placeholder="输入留言内容" required></textarea>
+<button type="submit">提交留言</button>
+</form>
+<p style="margin-top: 20px; color: #666;">
+管理员查看：<a href=" " target="_blank">所有留言</a >
+</p >
+</div>
+</body>
+</html>

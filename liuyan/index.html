@@ -1,29 +1,43 @@
-<!-- public/index.html -->
+<!-- frontend.html -->
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
 <head>
-<meta charset="UTF-8">
-<title>简易留言板</title>
-<style>
-body { max-width: 800px; margin: 20px auto; padding: 20px; }
-.container { border: 1px solid #ccc; padding: 20px; }
-form { display: grid; gap: 10px; }
-input, textarea { padding: 8px; border: 1px solid #ddd; }
-button { background: #4CAF50; color: white; padding: 10px; border: none; }
-button:hover { background: #45a049; }
-</style>
+<title>留言板</title>
+<link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-<div class="container">
-<h1>留言板</h1>
-<form action="/submit" method="POST">
-<input type="text" name="name" placeholder="你的名字（可选）">
-<textarea name="message" rows="4" placeholder="输入留言内容" required></textarea>
-<button type="submit">提交留言</button>
-</form>
-<p style="margin-top: 20px; color: #666;">
-管理员查看：<a href=" " target="_blank">所有留言</a >
-</p >
+<div class="container mt-5">
+<h1 class="mb-4">留言板</h1>
+<form id="messageForm">
+<div class="mb-3">
+<textarea class="form-control" id="content" rows="3" required></textarea>
 </div>
+<button type="submit" class="btn btn-primary">提交留言</button>
+</form>
+</div>
+
+<script>
+document.getElementById('messageForm').addEventListener('submit', async (e) => {
+e.preventDefault();
+const content = document.getElementById('content').value;
+
+try {
+const response = await fetch('/message', {
+method: 'POST',
+headers: {
+'Content-Type': 'application/json'
+},
+body: JSON.stringify({ content })
+});
+
+if (response.ok) {
+alert('留言提交成功！');
+document.getElementById('content').value = '';
+}
+} catch (error) {
+console.error('提交失败:', error);
+}
+});
+</script>
 </body>
 </html>

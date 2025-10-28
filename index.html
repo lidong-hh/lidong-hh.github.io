@@ -35,8 +35,8 @@
 <audio autoplay="autoplay" src="11"> </audio>
 <div class="timebox2">
 	<div class="timetext">
-		<div class="timetexttitle">距离农历新春</div>
-		<div class="timetextintro">bjyz贺大年</div>
+		<div class="timetexttitle">距离2026年</div>
+		<div class="timetextintro">bjyz迎新年</div>
 		<div class="timetextintro">倒计时</div>
 		<div class="timecounter">
 			<span id="t_d">127 天</span>
@@ -49,7 +49,7 @@
 
 <script type="text/javascript">
 function getRTime() {
-	var EndTime = new Date("2025/01/29 00:00:00"); //截止时间
+	var EndTime = new Date("2026/01/01 00:00:00"); //截止时间
 	var NowTime = new Date();
 	var t = EndTime.getTime() - NowTime.getTime();
 	var d = Math.floor(t / 1000 / 60 / 60 / 24);
@@ -77,3 +77,4 @@ setInterval(getRTime, 1000);
 
 </body>
 </html>
+
